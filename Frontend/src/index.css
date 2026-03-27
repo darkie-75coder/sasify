@@ -100,6 +100,10 @@ p {
   gap: 20px;
 }
 
+.msg {
+  text-align: center;
+}
+
 .create-box {
   height: 100vh;
   background: #019577;

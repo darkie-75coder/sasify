@@ -33,7 +33,7 @@ const Home = () => {
         return (
           <div className="message">
             <h1 className="username">{msg.Username}</h1>
-            <h2>{msg.message}</h2>
+            <h2 className="msg">{msg.message}</h2>
           </div>
         );
       })}
