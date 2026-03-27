@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial, sans-serif;
+  background: url("./assets/bg.jpg");
+  background-size: cover;
+}
+
+.formBox {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #019577;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
+  background: #fff;
+  color: #1C1C1C;
+  padding: 30px 50px;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+}
+
+form input {
+  padding: 10px 20px;
+  width: 100%;
+  border: 2px solid #dadada;
+  outline: none;
+  border-radius: 7px;
+  font-size: 17px;
+}
+
+.last-btn {
+  width: 115%;
+  background: #019577;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.send {
+  width: 100%;
+}
+
+.show-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  background: rgb(29, 255, 29);
+  border: 2px solid #dadada;
+  align-self: flex-start;
+  position: relative;
+  right: 20px;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+  color: #019577;
+  font-size: 20px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.Mesages-box {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: cover;
+  flex-direction: column;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #019577;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 3px solid #000;
+  width: 80%;
+  color: #fff;
+  gap: 20px;
+}
+
+.create-box {
+  height: 100vh;
+  background: #019577;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.create-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 10px;
+  background: #019577;
+  border: 3px solid #000;
+}
