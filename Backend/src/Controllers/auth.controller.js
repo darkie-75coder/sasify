@@ -28,7 +28,11 @@ async function Register(req, res) {
     process.env.JWT_SECRET,
   );
 
-  res.cookie("token", token);
+  res.cookie("token", token, {
+    httpOnly: true,
+    sameSite: "none",
+    secure: true,
+  });
 
   res.status(201).json({
     message: "Registered Successfuly! 🎉",
@@ -66,7 +70,11 @@ async function Login(req, res) {
     process.env.JWT_SECRET,
   );
 
-  res.cookie("token", token);
+  res.cookie("token", token, {
+    httpOnly: true,
+    sameSite: "none",
+    secure: true,
+  });
 
   res.status(201).json({
     message: "Login Successfuly! 🎉",
