@@ -10,7 +10,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://sasifer.vercel.app", "https://sasify.onrender.com"],
+    origin: [
+      "http://localhost:5173",
+      "https://sasifer.vercel.app",
+      "https://sasify.onrender.com",
+    ],
     credentials: true,
   }),
 );
