@@ -15,7 +15,7 @@ const CreateMessage = () => {
     setText("");
 
     await axios.post(
-      "http://localhost:3000/api/message/create-message",
+      "https://sasify.onrender.com/api/message/create-message",
       {
         message,
       },

@@ -32,7 +32,7 @@ const Register = () => {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/auth/register",
+        "https://sasify.onrender.com/api/auth/register",
         {
           username,
           email,

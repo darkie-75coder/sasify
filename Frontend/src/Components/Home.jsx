@@ -12,7 +12,7 @@ const Home = () => {
     async function getMessages() {
       try {
         const res = await axios.get(
-          "http://localhost:3000/api/message/messages",
+          "https://sasify.onrender.com/api/message/messages",
           {
             withCredentials: true,
           },
@@ -20,7 +20,7 @@ const Home = () => {
 
         setMessage(res.data.messages);
       } catch (err) {
-        console.log(err);
+        console.log(err.response.data.message);
         navigate("/login");
       }
     }
