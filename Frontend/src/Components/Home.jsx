@@ -32,14 +32,7 @@ const Home = () => {
       {Message.map((msg) => {
         return (
           <div className="message">
-            <h1
-              style={{
-                textDecoration: "underline",
-                textUnderlineOffset: "5px",
-              }}
-            >
-              {msg.Username}
-            </h1>
+            <h1 className="username">{msg.Username}</h1>
             <h2>{msg.message}</h2>
           </div>
         );
